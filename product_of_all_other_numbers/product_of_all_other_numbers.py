@@ -2,11 +2,18 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+
 def product_of_all_other_numbers(arr):
     # Your code here
+    #loop through the numbres
+    product = 1
 
-    pass
-
+    for number in arr:
+        product = product * number 
+        product_without_number = [product // n for n in arr]
+        
+    return product_without_number
+        
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
